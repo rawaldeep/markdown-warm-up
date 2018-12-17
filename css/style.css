@@ -1,13 +1,15 @@
-body{background-color: #32D7E5;}
+body{background-color: #32D7E5;
+    transition: background-color 0.5s ease;}
 #wrapper{
     background-color: #1C777F;
-    width: 1000px;
-    margin: 5vw 10vw;
+    width: 80vw;
+    margin: 5vw 5vw 1vw;
     padding: 5%;
     position: relative;
     color: #0E3C40;
     font-family: 'Raleway', sans-serif;
     overflow: hidden;
+    transition: width 0.5s ease;
 }
 #wrapper h1{ font-size: 2.5em;}
 #wrapper p{ font-size: 1.7em;}
@@ -19,3 +21,42 @@ body{background-color: #32D7E5;}
     left: 0;
     height: 2em;
     background-color: #0E3C40;}
+#small, #medium, #large { 
+    background-color: #1C777F;
+    width: 80vw;
+    margin: 1vw 5vw;
+    padding: 5%;
+    position: relative;
+    color: #0E3C40;
+    font-family: 'Raleway', sans-serif;
+    transition: display 0.5s ease;
+}
+/*--media queries--*/  
+/******size below 300px*****/  
+@media only screen and (max-width: 300px) {
+    body {
+      background-color: red;
+    }
+    #wrapper #line{ height: 1em;}
+    #small h2{font-size: 1.2em;}
+    #medium, #large { display: none;  }
+    #wrapper h1{ font-size: 1.1em;}
+    #wrapper p{ font-size: 0.9em;}
+}
+/******size between 300px & 768px *****/  
+@media only screen and (max-width:768px) and (min-width:300px)  {
+    body {
+      background-color: green;
+    }
+    #small, #large { display: none;  }
+    #medium h2{ font-size: 1.8em;}
+   #wrapper h1{ font-size: 1.8em;}
+    #wrapper p{ font-size: 1.2em;}
+  }  
+/******size above 768px *****/  
+@media only screen and (min-width:768px)  {
+    body {
+      background-color: #32D7E5;
+    }
+    #medium, #small { display: none;  }
+  }  
