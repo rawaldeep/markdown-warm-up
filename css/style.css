@@ -1,4 +1,5 @@
 body{background-color: #32D7E5;
+    font-family: 'Raleway', sans-serif;
     transition: background-color 0.5s ease;}
 #wrapper{
     background-color: #1C777F;
@@ -7,7 +8,6 @@ body{background-color: #32D7E5;
     padding: 5%;
     position: relative;
     color: #0E3C40;
-    font-family: 'Raleway', sans-serif;
     overflow: hidden;
     transition: width 0.5s ease;
 }
@@ -28,7 +28,6 @@ body{background-color: #32D7E5;
     padding: 5%;
     position: relative;
     color: #0E3C40;
-    font-family: 'Raleway', sans-serif;
     transition: display 0.5s ease;
 }
 /*--media queries--*/  
