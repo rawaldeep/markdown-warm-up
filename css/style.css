@@ -1,16 +1,18 @@
 body{background-color: #32D7E5;
     font-family: 'Raleway', sans-serif;
     transition: background-color 0.5s ease;}
-#wrapper{
+#wrapper{ width: 80vw;
+    margin: 5vw 5vw 1vw;}
+
+#wrapper, #box1, #box2, #box3{
     background-color: #1C777F;
-    width: 80vw;
-    margin: 5vw 5vw 1vw;
     padding: 5%;
     position: relative;
     color: #0E3C40;
     overflow: hidden;
     transition: width 0.5s ease;
 }
+#box1, #box2, #box3{ width: 12.7vw; margin: 1vw 5vw; float: left;}
 #wrapper h1{ font-size: 2.5em;}
 #wrapper p{ font-size: 1.7em;}
 #wrapper #line{ 
@@ -40,7 +42,8 @@ body{background-color: #32D7E5;
     #small h2{font-size: 1.2em;}
     #medium, #large { display: none;  }
     #wrapper h1{ font-size: 1.1em;}
-    #wrapper p{ font-size: 0.9em;}
+    #wrapper p { font-size: 0.9em;}
+    #box1, #box2, #box3{ width: 80vw; font-size: 0.7em}
 }
 /******size between 300px & 768px *****/  
 @media only screen and (max-width:768px) and (min-width:300px)  {
@@ -51,6 +54,10 @@ body{background-color: #32D7E5;
     #medium h2{ font-size: 1.8em;}
    #wrapper h1{ font-size: 1.8em;}
     #wrapper p{ font-size: 1.2em;}
+    #box1, #box2, #box3{ font-size: 0.7em}
+    #box1{ width: 70%; border: 1px solid #0E3C40; margin: 0; padding: 1vw;}
+    #box2{ width: 24%; border: 1px solid #0E3C40; margin: 0; padding: 1vw;}
+    #box3{ width: 100%; border: 1px solid #0E3C40; margin: 0; padding: 1vw;}
   }  
 /******size above 768px *****/  
 @media only screen and (min-width:768px)  {
